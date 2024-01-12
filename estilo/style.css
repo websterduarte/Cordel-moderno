@@ -1,1 +1,67 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* font-variante: small-caps = letra maiuscula, com a letra primeira maior*/
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* usamos padding-top: vh e padding-bottom: vh para da um afastamento par realização do parallax.
+line-height: afastamento da linhas.
+*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+}
+
+section.imagem > P{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
