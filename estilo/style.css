@@ -59,14 +59,21 @@ section{
     font-family: var(--fonte3);
     font-size: 3vw;
 }
+
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 
+/* box-shadow: inset = sombra de caixa pra dentro*/
 section.imagem{
     background-color: rgba(0, 0, 0, 0.562);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); 
+    background-attachment: fixed;
 }
 
 /* dispya: inline-block, transforma na caixa que se adapta no conteudo*/
@@ -74,8 +81,21 @@ section.imagem > P{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.144);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+
+}
 footer{
     background-color: black;
     color: white;
